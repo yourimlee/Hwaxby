@@ -17,12 +17,24 @@
 - GAN 모델의 경우, 합성한 음성의 품질이 다소 떨어지지만 속도와 파라미터 개수 부분에서 부분적으로 개선
 - HiFi-GAN은 높은 MOS값 구현
 
+## Tacotron (attention-based)
+<img width="838" alt="tacotron_model" src="https://user-images.githubusercontent.com/59776953/156309033-c82302f9-44dc-4698-b846-8a02be49c1d7.png">
+
+- 문자열을 입력받아서 그에 해당하는 Mel spectrogram을 프레임 단위로 출력하는 Encoder-Decoder 형식의 모델
+- audio-text pair만 있으면 학습이 가능한 end-to-end 모델
+- auto-regressive한 방식으로 frame별로 생성하기 때문에 느리다는 단점
+
 ### Datasets
  - 2시간 30분 분량의 음성 데이터
  - 음성 데이터를 전사한 script
 
 ### Prerequisites
-- [Requirements.txt](https://github.com/sce-tts/TTS/blob/sce-tts/requirements.txt) 
+- __Glow-tts & Hifi-GAN__
+	- [Requirements.txt](https://github.com/sce-tts/TTS/blob/sce-tts/requirements.txt) 
+- __Tacotron__
+	- docker
+	- Tensorflow 1.3
+	- Python 3.6+
 
 ### Train a model
 <img width="773" alt="model-architecture" src="https://user-images.githubusercontent.com/59776953/155987786-bd9f81a1-220f-4fd0-bba0-f021441efa18.png">
@@ -32,3 +44,4 @@
 
 ### References
 - [SCE-TTS : 내 목소리로 TTS 만들기](https://github.com/sce-tts/sce-tts.github.io)
+- [multi-speaker-tacotron-speaker](https://github.com/carpedm20/multi-Speaker-tacotron-tensorflow)
