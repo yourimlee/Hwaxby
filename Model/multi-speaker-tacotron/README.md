@@ -1,1 +1,1 @@
-# [multi-speaker-tacotron-speaker](https://github.com/carpedm20/multi-Speaker-tacotron-tensorflow)
+오픈소스 활용[multi-speaker-tacotron-speaker](https://github.com/carpedm20/multi-Speaker-tacotron-tensorflow)
