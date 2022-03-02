@@ -37,10 +37,13 @@
     - Spring Boot 2.4.7
     - JDK 8
 - **Model**
-    - python 3.8
-    - pytorch 1.7
-    - Glow-TTS
-    - HiFi-GAN
+    - Glow-TTS & Hifi-GAN
+        - python 3.8
+        - pytorch 1.7
+    - Tacotron
+        - docker
+        - tensorflow 1.3
+        - python 3.6+
 - **External API**
     - [OpenWeatherAPI](https://openweathermap.org/api)
     - [AIHub](https://aiopen.etri.re.kr/service_api.php)
